@@ -19,9 +19,12 @@
 			</view>
 			<view class="itemMid">
 				<view class="itemPrice">
-					<text style="font-size: 20rpx;">￥</text>
-				<text>{{item.actualPrice}}</text>
-				<text style="background-color: #333333;color: #e5e542;font-size: 10rpx;border-radius: 5rpx;">券后价</text>
+				 <view class="">
+					 <text style="font-size: 20rpx;">￥</text>
+					 <text>{{item.actualPrice}}</text>
+				 </view>
+				<view class="" ><image src="../static/1.png" style="width:150rpx;height:50rpx;margin-left: -50rpx;"></image></view>
+				<!-- <text style="color: #e9ca93;font-size: 10rpx;border-radius: 10rpx;margin-left: 5rpx;padding-left: 10rpx;padding-right: 10rpx;background-image: url(../static/1.png);width: 50rpx;height: 20rpx;">券后价</text> -->
 				
 				</view>
 				<view class="xiaoliang"><text>已售{{item.monthSales}}件</text></view>
@@ -29,9 +32,7 @@
 			<view class="quan">
 				<text>{{item.couponPrice}}元券</text>
 			</view>
-			<view class="shopName">
-				<text></text>
-			</view>
+			
 			
 			
 		</view>
@@ -79,7 +80,7 @@
 		
 	}
 	.xiaoliang{
-		font-size: 90%;
+		font-size: 85%;
 		color: #808080;
 	}
 	.biaoqian{
@@ -87,6 +88,7 @@
 	}
 	.itemPrice{
 		color: #ff0000;
+		display: flex;
 		
 	}
 	.itemPrice text{
@@ -98,7 +100,7 @@
 		display: flex;
 		justify-content: space-between;
 		padding-right: 10rpx;
-		margin-top: 10rpx;
+		margin-top: 20rpx;
 		
 	}
 	.itemTitle{
