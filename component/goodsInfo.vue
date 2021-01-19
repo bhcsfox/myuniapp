@@ -125,7 +125,7 @@
 		height: 280rpx;
 		margin-top: 10rpx;
 		
-		/* background-color: #000000; */
+		background-color: #f3f3f3;
 		border-radius: 20rpx;
 		
 	}
