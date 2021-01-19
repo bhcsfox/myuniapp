@@ -89,7 +89,7 @@
 						res.data.data.forEach(d=>{
 							d.dtitle=d.dtitle.replace("【","");
 							d.dtitle=d.dtitle.replace("】","");
-							d.monthSales=d.monthSales>10000?(d.monthSales/10000).toFixed(1)+'':d.monthSales;
+							d.monthSales=d.monthSales>10000?(d.monthSales/10000).toFixed(1)+'万':d.monthSales;
 						});
 						this.indexlist=this.indexlist.concat(res.data.data);                                                                 
 						
