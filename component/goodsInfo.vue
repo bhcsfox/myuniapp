@@ -19,7 +19,10 @@
 			</view>
 			<view class="itemMid">
 				<view class="itemPrice">￥<text>{{item.actualPrice}}</text></view>
-				<view class=""><text>已售{{item.monthSales}}件</text></view>
+				<view class="xiaoliang"><text>已售{{item.monthSales}}件</text></view>
+			</view>
+			<view class="quan">
+				<text>{{item.couponPrice}}元券</text>
 			</view>
 			
 			
@@ -51,14 +54,38 @@
 </script>
 
 <style>
+	.quan{
+		margin-top: 10rpx;
+	}
+	.quan text{
+		width: 100rpx;
+		height: 40rpx;
+		background-color: #ff0000;
+		padding-left: 10rpx;
+		padding-right: 10rpx;
+		border-radius: 10rpx;
+		text-align: center;
+		
+	}
+	.xiaoliang{
+		font-size: 90%;
+		color: #808080;
+	}
 	.biaoqian{
 		
 	}
 	.itemPrice{
+		color: #ff0000;
+	}
+	.itemPrice text{
+		font-size: 120%;		
+		font-weight: bold;
 		
 	}
 	.itemMid{
 		display: flex;
+		justify-content: space-between;
+		padding-right: 10rpx;
 		
 	}
 	.itemTitle{
@@ -75,7 +102,7 @@
 		padding:10rpx;
 		margin-left: 5rpx;
 		color: white;
-		background-color: #C0C0C0;
+		/* background-color: #C0C0C0; */
 	}
 	.goodsBox{
 		width: 100%;
